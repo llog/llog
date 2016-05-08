@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+cd _site
+echo "add CNAME"
+echo "llog.itmp.top" > CNAME
+git add -A
+git commit -m "$(date +%y%m%d-%H%M): auto deploy update site"
+git push --force --quiet https://${GH_TOKEN}@${GH_REF} gh-pages:gh-pages

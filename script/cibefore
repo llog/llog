@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+git clone -b gh-pages https://${GH_REF} _site
+cd _site
+git config user.name "huaixiaoz"
+git config user.email "hello@itmp.top"
+cd ..
