@@ -1,0 +1,9 @@
+### osx  ###
+.DS_Store
+
+### gem ###
+Gemfile
+Gemfile.lock
+
+### script ###
+script
